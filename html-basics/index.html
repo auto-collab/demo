@@ -1,11 +1,102 @@
-<!DOCTYPE html> <!-- This declaration defines the document type and version of HTML -->
-<html lang="en">  
-<head> <!-- html documents contain a head which acts as a container for metadata -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Titles display in tab</title>
-</head>
-<body> <!-- The body contains the content of the document that is displayed in the browser -->
+<!DOCTYPE html>
+<!-- This declaration defines the document type and version of HTML -->
+<html lang="en">
+  <head>
+    <!-- html documents contain a head which acts as a container for metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Title display in tab</title>
+  </head>
+  <body>
+    <!-- The body contains the content of the document that is displayed in the browser -->
     <h1>HTML Basics</h1>
-</body>
+
+    <div>
+      <h2>&lt;input&gt;</h2>
+
+      <!-- TEXT INPUT:
+    The <input type="text"> element creates a single-line text field.
+    It is commonly used for names, emails, usernames, etc.
+    The 'placeholder' attribute provides a hint to the user.
+    The 'id' can be used to associate the input with a <label> or access it via JavaScript.
+  -->
+      <input type="text" placeholder="Enter First Name" id="first-name-input" />
+
+      <br />
+
+      <!-- RADIO INPUT:
+    The <input type="radio"> creates a circular option for choosing one value among a group.
+    All radio buttons with the same 'name' belong to the same group — only one can be selected at a time.
+    The 'value' attribute defines what data will be submitted if this option is selected.
+    Wrapping the input in a <label> allows the user to click the label text to make the selection.
+  -->
+      <label>
+        <input
+          type="radio"
+          name="Gender"
+          value="Male"
+          id="gender-male-radio"
+        />Male
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="Gender"
+          value="Female"
+          id="gender-female-radio"
+        />Female
+      </label>
+
+      <br />
+
+      <!-- CHECKBOX INPUT:
+    The <input type="checkbox"> allows for toggling an independent true/false value.
+    Multiple checkboxes can be checked at once — each is a separate control.
+    The 'checked' attribute sets the box to be pre-selected when the page loads.
+  -->
+      <input type="checkbox" checked />Check me
+    </div>
+
+    <div>
+      <h2>&lt;select&gt;</h2>
+      <br />
+
+      <!-- SINGLE SELECT -->
+      <label for="single-select-example">Select an item:</label>
+      <select id="single-select-example" name="single-select-example">
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+      </select>
+      <br /><br />
+
+      <!-- MULTIPLE SELECT -->
+      <label for="multiple-display-select-example">Select items:</label>
+      <select
+        id="multiple-display-select-example"
+        name="multiple-display-select-example"
+        multiple
+        size="4"
+      >
+        <option value="option1">option1</option>
+        <option value="option2">option2</option>
+        <option value="option3">option3</option>
+        <option value="option4">option4</option>
+        <option value="option5">option5</option>
+        <option value="option6">option6</option>
+      </select>
+    </div>
+
+    <div>
+      <!-- BUTTON:
+    The <button> element creates a clickable button.
+    By default, a button inside a <form> will submit the form unless the 'type' is specified.
+    It is best practice to always define the type for clarity: "button", "submit", or "reset".
+  -->
+      <h2>&lt;button&gt;</h2>
+      <button type="button" onclick="alert('Alert triggered!')">
+        Click Me
+      </button>
+    </div>
+  </body>
 </html>
