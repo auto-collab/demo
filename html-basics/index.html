@@ -115,5 +115,57 @@ li
         <label></label>
       </form>
     </div>
+    <br />
+    <!-- TEXTAREA:
+    The <textarea> element creates a multi-line text input area.
+    Use it when the user is expected to enter longer blocks of text (e.g., comments, messages).
+    - The 'rows' attribute defines the number of visible lines.
+    - The 'cols' attribute defines the visible width in character spaces.
+    - The 'placeholder' provides a hint inside the field.
+    - The closing tag is required (unlike <input>).
+  -->
+    <textarea
+      id="text-area-example"
+      placeholder="Enter your text here"
+      cols="40"
+      rows="4"
+    ></textarea>
+
+    div>
+    <h2>&lt;a&gt; (Anchor)</h2>
+
+    <!-- BASIC LINK:
+    The <a> tag creates a hyperlink.
+    The 'href' attribute specifies the destination URL.
+    You can link to external pages, internal sections, email, or even files.
+  -->
+    <a href="https://example.com" target="_blank">Visit Example</a>
+    <br /><br />
+
+    <!-- INTERNAL LINK:
+    Links to a section within the same page using an ID.
+    Clicking this link scrolls to the element with id="section1".
+  -->
+    <a href="#section1">Jump to Section 1</a>
+    <br /><br />
+
+    <!-- EMAIL LINK:
+    Opens the user's default mail client to send an email.
+  -->
+    <a href="mailto:someone@example.com">Send Email</a>
+    <br /><br />
+
+    <!-- TEL LINK:
+    Opens phone dialer on supported devices.
+  -->
+    <a href="tel:+1234567890">Call Us</a>
+
+    <!-- Section target for internal link -->
+    <div
+      id="section1"
+      style="margin-top: 50px; padding: 10px; border: 1px solid #ccc"
+    >
+      <strong>Section 1:</strong> You jumped here from the internal link above.
+    </div>
   </body>
 </html>
